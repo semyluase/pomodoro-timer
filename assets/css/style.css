@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffdee9;
+    background-image: linear-gradient(315deg, #ffdee9 0%, #b5fffc 100%);
+    background-repeat: no-repeat;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    color: #ffffff;
+}
+
+.title {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 3.4rem;
+    font-weight: 500;
+    color: #01579b;
+}
+
+.container {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}
+
+.wrapper {
+    background-color: #67a9b1;
+    width: 700px;
+    height: 450px;
+    border: 2px solid #2c86c4;
+    outline: none;
+    border-radius: 10px;
+    font-size: 3rem;
+}
+
+.length-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    padding: 20px 0;
+    font-weight: 300;
+}
+
+.break-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.break-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.break-decrement,
+.break-length,
+.break-increment {
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+.break-decrement,
+.break-increment {
+    transform: scale(2, 2);
+    transition: color 0.3s ease-in-out;
+}
+
+.break-decrement:hover,
+.break-increment:hover {
+    cursor: pointer;
+    color: #01579b;
+}
+
+.break-length {
+    font-size: 3rem;
+}
+
+.session-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.session-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.session-decrement,
+.session-length,
+.session-increment {
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+.session-decrement,
+.session-increment {
+    transform: scale(2, 2);
+    transition: color 0.3s ease-in-out;
+}
+
+.session-decrement:hover,
+.session-increment:hover {
+    cursor: pointer;
+    color: #01579b;
+}
+
+.session-length {
+    font-size: 3rem;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    font-size: 3.5rem;
+    padding: 0;
+}
+
+.timer-label {
+    padding: 0 10px 10px 10px;
+    margin: 0;
+}
+
+.time-left {
+    font-size: 3.8rem;
+}
+
+.timer-control {
+    display: flex;
+    justify-content: center;
+}
+
+.start_stop {
+    display: flex;
+    flex-direction: row;
+    transform: scale(2, 2) translate(-5px);
+    cursor: pointer;
+}
+
+.start,
+.stop,
+.reset {
+    transition: color 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.start:hover,
+.stop:hover,
+.reset:hover {
+    color: #01579b;
+}
+
+.reset {
+    transform: scale(2.5, 2.5) translate(9px, 5px);
+    cursor: pointer;
+}
+
+.inactive {
+    opacity: 0;
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    font-size: 2rem;
+    color: #01579b;
+    font-weight: 500;
+    padding-top: 2rem;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/css.gg/icons/all.css" rel="stylesheet" />
+
+    <!-- my Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Pomodoro Timer</title>
+</head>
+
+<body>
+    <h1 class="title">Pomodoro Timer</h1>
+    <div class="container">
+        <div class="wrapper">
+            <div class="length-control">
+                <div class="break-container">
+                    <div class="break-label" id="break-label">Break Length</div>
+                    <div class="break-control">
+                        <div class="break-decrement" id="break-decrement">
+                            <i class="gg-arrow-down"></i>
+                        </div>
+                        <div class="break-length" id="break-length">5</div>
+                        <div class="break-increment" id="break-increment">
+                            <i class="gg-arrow-up"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="session-container">
+                    <div class="session-label" id="session-label">Session Length</div>
+                    <div class="session-control">
+                        <div class="session-decrement" id="session-decrement">
+                            <i class="gg-arrow-down"></i>
+                        </div>
+                        <div class="session-length" id="session-length">25</div>
+                        <div class="session-increment" id="session-increment">
+                            <i class="gg-arrow-up"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timer">
+                <div class="timer-label" id="timer-label">Session</div>
+                <div class="time-left" id="time-left">25:00</div>
+            </div>
+            <div class="timer-control">
+                <div class="start_stop" id="start_stop">
+                    <div class="start"><i class="gg-play-button-o"></i></div>
+                    <div class="stop inactive">
+                        <i class="gg-play-pause-o"></i>
+                    </div>
+                </div>
+                <div class="reset" id="reset">
+                    <i class="gg-undo"></i>
+                </div>
+            </div>
+            <audio src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav " id="beep" class="beep"></audio>
+        </div>
+        <div class="footer">
+            <div class="author">by Semy Luase</div>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js "></script> -->
+
+    <!-- myscript -->
+    <script src="assets/js/script.js "></script>
+</body>
+
+</html>
